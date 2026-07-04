@@ -1,7 +1,7 @@
 # Portal Inovat - GitHub Pages
 
 Pagina estatica de apresentacao do Portal Inovat, pronta para publicacao em
-`https://csacomani.github.io`.
+`https://csacomani.github.io` e no dominio configurado em `CNAME`.
 
 ## Estrutura
 
