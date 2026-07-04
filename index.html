@@ -15,7 +15,7 @@
       content="Gestão de sensores, controladores, dashboards, KPIs, alarmes e relatórios em uma plataforma IoT segura e multi-tenant."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/app-mobile.jpeg" />
+    <meta property="og:image" content="assets/inovat-logo.svg" />
     <link rel="icon" href="assets/inovat-icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -49,22 +49,74 @@
           </div>
           <dl class="hero-metrics" aria-label="Destaques da plataforma">
             <div>
-              <dt>Multi-tenant</dt>
-              <dd>namespaces MQTT isolados</dd>
+              <dt>Graficos</dt>
+              <dd>telemetria em tempo real</dd>
             </div>
             <div>
-              <dt>Tempo real</dt>
-              <dd>dashboards, KPIs e status</dd>
+              <dt>Sensores</dt>
+              <dd>lista, status e historico</dd>
             </div>
             <div>
-              <dt>Operacao</dt>
-              <dd>alarmes, relatorios e auditoria</dd>
+              <dt>Alarmes</dt>
+              <dd>incidentes e notificacoes</dd>
             </div>
           </dl>
         </div>
-        <div class="hero-visual" aria-label="Interface mobile do Portal Inovat">
-          <div class="phone-shell">
-            <img src="assets/app-mobile.jpeg" alt="Tela mobile do Portal Inovat exibindo central de incidentes e alarmes" />
+        <div class="hero-visual" aria-label="Dashboard web do Portal Inovat com graficos e sensores">
+          <div class="dashboard-preview">
+            <div class="preview-topbar">
+              <span>Dashboard</span>
+              <strong>Online</strong>
+            </div>
+            <div class="kpi-row" aria-label="Indicadores de sensores">
+              <div>
+                <span>Sensores ativos</span>
+                <strong>128</strong>
+              </div>
+              <div>
+                <span>Leituras hoje</span>
+                <strong>42k</strong>
+              </div>
+              <div>
+                <span>Alarmes abertos</span>
+                <strong>3</strong>
+              </div>
+            </div>
+            <div class="chart-panel">
+              <div class="panel-heading">
+                <span>Temperatura e umidade</span>
+                <small>ultimas 24h</small>
+              </div>
+              <svg class="chart" viewBox="0 0 520 220" role="img" aria-label="Grafico de telemetria em tempo real">
+                <path class="grid-line" d="M20 40H500M20 90H500M20 140H500M20 190H500" />
+                <path class="chart-area" d="M20 172 C70 132 112 142 156 104 C205 62 252 91 298 72 C358 48 398 86 448 58 C475 44 492 48 500 43 L500 200 L20 200 Z" />
+                <path class="chart-line primary-line" d="M20 172 C70 132 112 142 156 104 C205 62 252 91 298 72 C358 48 398 86 448 58 C475 44 492 48 500 43" />
+                <path class="chart-line secondary-line" d="M20 124 C74 118 104 78 154 86 C204 94 235 132 282 122 C338 110 365 138 416 118 C452 104 475 112 500 94" />
+              </svg>
+            </div>
+            <div class="sensor-panel">
+              <div class="panel-heading">
+                <span>Lista de sensores</span>
+                <small>status ao vivo</small>
+              </div>
+              <ul>
+                <li>
+                  <span class="status online"></span>
+                  <strong>TH-Estufa-01</strong>
+                  <em>24.8 C</em>
+                </li>
+                <li>
+                  <span class="status online"></span>
+                  <strong>Solo-Cana-Norte</strong>
+                  <em>61% umid.</em>
+                </li>
+                <li>
+                  <span class="status alert"></span>
+                  <strong>Camara-Fria-02</strong>
+                  <em>Alarme HIGH</em>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
