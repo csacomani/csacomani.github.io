@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portal Inovat | Telemetria IoT em tempo real</title>
+    <meta
+      name="description"
+      content="Portal Inovat: plataforma web multi-tenant para telemetria IoT, MQTT, dashboards, alarmes, controladores e relatórios operacionais."
+    />
+    <meta name="theme-color" content="#071827" />
+    <meta property="og:title" content="Portal Inovat | Telemetria IoT em tempo real" />
+    <meta
+      property="og:description"
+      content="Gestão de sensores, controladores, dashboards, KPIs, alarmes e relatórios em uma plataforma IoT segura e multi-tenant."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/app-mobile.jpeg" />
+    <link rel="icon" href="assets/inovat-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#topo" aria-label="Portal Inovat">
+        <img src="assets/inovat-icon.svg" alt="" />
+        <span>Portal Inovat</span>
+      </a>
+      <nav aria-label="Navegacao principal">
+        <a href="#plataforma">Plataforma</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#seguranca">Seguranca</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main id="topo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Telemetria IoT industrial, agricola e operacional</p>
+          <h1 id="hero-title">Portal Inovat</h1>
+          <p class="lead">
+            Plataforma web para conectar sensores e controladores via MQTT,
+            acompanhar dados em tempo real, agir sobre alarmes e transformar
+            telemetria em decisao operacional.
+          </p>
+          <div class="hero-actions" aria-label="Acoes principais">
+            <a class="button primary" href="#contato">Solicitar apresentacao</a>
+            <a class="button secondary" href="#recursos">Ver recursos</a>
+          </div>
+          <dl class="hero-metrics" aria-label="Destaques da plataforma">
+            <div>
+              <dt>Multi-tenant</dt>
+              <dd>namespaces MQTT isolados</dd>
+            </div>
+            <div>
+              <dt>Tempo real</dt>
+              <dd>dashboards, KPIs e status</dd>
+            </div>
+            <div>
+              <dt>Operacao</dt>
+              <dd>alarmes, relatorios e auditoria</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual" aria-label="Interface mobile do Portal Inovat">
+          <div class="phone-shell">
+            <img src="assets/app-mobile.jpeg" alt="Tela mobile do Portal Inovat exibindo central de incidentes e alarmes" />
+          </div>
+        </div>
+      </section>
+
+      <section id="plataforma" class="section intro">
+        <div class="section-heading">
+          <p class="eyebrow">Da ponta ao painel</p>
+          <h2>Uma camada completa para operacoes conectadas</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <h3>Coleta segura</h3>
+            <p>
+              Sensores, gateways e controladores publicam dados em topicos MQTT
+              padronizados, com credenciais por dispositivo e controle de ACL no
+              broker.
+            </p>
+          </article>
+          <article>
+            <h3>Dados acionaveis</h3>
+            <p>
+              A ingestao organiza telemetria, status, variaveis e indicadores
+              para consulta historica, graficos, KPIs e relatorios.
+            </p>
+          </article>
+          <article>
+            <h3>Resposta operacional</h3>
+            <p>
+              A central de alarmes prioriza incidentes, apoia notificacoes,
+              webhooks e rotinas de acompanhamento para equipes de campo.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="recursos" class="section feature-band">
+        <div class="section-heading">
+          <p class="eyebrow">Recursos principais</p>
+          <h2>O que o Portal Inovat entrega</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">MQ</span>
+            <h3>MQTT com isolamento por cliente</h3>
+            <p>Topicos por tenant, publicacao de telemetria, status online/offline e comandos para dispositivos.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">KP</span>
+            <h3>Dashboards e KPIs</h3>
+            <p>Paineis para leitura rapida da operacao, graficos em tempo real e historico por sensor ou aplicacao.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">AL</span>
+            <h3>Central de alarmes</h3>
+            <p>Incidentes por severidade, status de atendimento, regras, notificacoes e integracao por webhook.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">IO</span>
+            <h3>Controladores I/O</h3>
+            <p>Provisionamento de controladores, canais digitais e analogicos, Modbus e comandos remotos com rastreio.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">AP</span>
+            <h3>Aplicacoes de sensores</h3>
+            <p>Templates para casos de uso como solo, ambiente refrigerado, processos industriais e monitoramento customizado.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">RP</span>
+            <h3>Relatorios e auditoria</h3>
+            <p>Exportacoes historicas, rastreabilidade de acoes, trilhas de auditoria e suporte a rotinas de conformidade.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section flow" aria-labelledby="flow-title">
+        <div class="section-heading">
+          <p class="eyebrow">Arquitetura</p>
+          <h2 id="flow-title">Projetado para telemetria continua</h2>
+        </div>
+        <div class="flow-grid">
+          <div class="flow-step">
+            <strong>1</strong>
+            <h3>Dispositivos</h3>
+            <p>Sensores e controladores enviam leituras e recebem comandos.</p>
+          </div>
+          <div class="flow-step">
+            <strong>2</strong>
+            <h3>Broker MQTT</h3>
+            <p>Autenticacao e ACLs isolam cada cliente no seu namespace.</p>
+          </div>
+          <div class="flow-step">
+            <strong>3</strong>
+            <h3>Ingestao</h3>
+            <p>Workers gravam series temporais e verificam eventos operacionais.</p>
+          </div>
+          <div class="flow-step">
+            <strong>4</strong>
+            <h3>Portal</h3>
+            <p>Dashboards, alarmes, relatorios e administracao em uma interface.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="seguranca" class="section security">
+        <div class="security-copy">
+          <p class="eyebrow">Seguranca e governanca</p>
+          <h2>Isolamento, auditoria e operacao confiavel desde a base</h2>
+          <p>
+            O Portal Inovat combina autenticacao moderna, segregacao de topicos,
+            ACLs MQTT, logs de auditoria e protecoes de infraestrutura para
+            manter dados e dispositivos organizados por cliente.
+          </p>
+        </div>
+        <ul class="security-list">
+          <li>Autenticacao JWT com refresh token rotativo</li>
+          <li>Namespaces MQTT por tenant e ACLs no broker</li>
+          <li>Logs de auditoria para acoes sensiveis</li>
+          <li>Relatorios, LGPD operacional e trilhas de conformidade</li>
+        </ul>
+      </section>
+
+      <section id="contato" class="section contact">
+        <img src="assets/inovat-logo.svg" alt="Inovat" />
+        <div>
+          <p class="eyebrow">Proximo passo</p>
+          <h2>Conheca o Portal Inovat em operacao</h2>
+          <p>
+            Apresente sua necessidade de monitoramento e veja como sensores,
+            controladores, dashboards e alarmes podem ser organizados em um fluxo
+            unico de telemetria.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:csacomani@gmail.com?subject=Apresentacao%20Portal%20Inovat">
+          Entrar em contato
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Portal Inovat</span>
+      <span>Telemetria IoT, alarmes e operacao conectada.</span>
+    </footer>
+  </body>
+</html>
