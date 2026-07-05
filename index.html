@@ -18,6 +18,7 @@
     <meta property="og:image" content="assets/inovat-logo.svg" />
     <link rel="icon" href="assets/inovat-icon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="i18n.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -26,39 +27,44 @@
         <span>Portal Inovat</span>
       </a>
       <nav aria-label="Navegacao principal">
-        <a href="#plataforma">Plataforma</a>
-        <a href="#recursos">Recursos</a>
-        <a href="#seguranca">Seguranca</a>
-        <a href="#contato">Contato</a>
+        <a href="#plataforma" data-i18n="nav.platform">Plataforma</a>
+        <a href="#recursos" data-i18n="nav.features">Recursos</a>
+        <a href="#seguranca" data-i18n="nav.security">Seguranca</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
       </nav>
+      <div class="language-switcher" aria-label="Escolha de idioma">
+        <button type="button" data-lang="pt-BR" aria-pressed="true">PT-BR</button>
+        <button type="button" data-lang="en" aria-pressed="false">ENG</button>
+        <button type="button" data-lang="es" aria-pressed="false">ESP</button>
+      </div>
     </header>
 
     <main id="topo">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Telemetria IoT industrial, agricola e operacional</p>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Telemetria IoT industrial, agricola e operacional</p>
           <h1 id="hero-title">Portal Inovat</h1>
-          <p class="lead">
+          <p class="lead" data-i18n="hero.lead">
             Plataforma web para conectar sensores e controladores via MQTT,
             acompanhar dados em tempo real, agir sobre alarmes e transformar
             telemetria em decisao operacional.
           </p>
           <div class="hero-actions" aria-label="Acoes principais">
-            <a class="button primary" href="#contato">Solicitar apresentacao</a>
-            <a class="button secondary" href="#recursos">Ver recursos</a>
+            <a class="button primary" href="#contato" data-i18n="hero.ctaPrimary">Solicitar apresentacao</a>
+            <a class="button secondary" href="#recursos" data-i18n="hero.ctaSecondary">Ver recursos</a>
           </div>
           <dl class="hero-metrics" aria-label="Destaques da plataforma">
             <div>
-              <dt>Graficos</dt>
-              <dd>telemetria em tempo real</dd>
+              <dt data-i18n="hero.metricChartsTitle">Graficos</dt>
+              <dd data-i18n="hero.metricChartsText">telemetria em tempo real</dd>
             </div>
             <div>
-              <dt>Sensores</dt>
-              <dd>lista, status e historico</dd>
+              <dt data-i18n="hero.metricSensorsTitle">Sensores</dt>
+              <dd data-i18n="hero.metricSensorsText">lista, status e historico</dd>
             </div>
             <div>
-              <dt>Alarmes</dt>
-              <dd>incidentes e notificacoes</dd>
+              <dt data-i18n="hero.metricAlarmsTitle">Alarmes</dt>
+              <dd data-i18n="hero.metricAlarmsText">incidentes e notificacoes</dd>
             </div>
           </dl>
         </div>
@@ -66,26 +72,26 @@
           <div class="dashboard-preview">
             <div class="preview-topbar">
               <span>Dashboard</span>
-              <strong>Online</strong>
+              <strong data-i18n="preview.online">Online</strong>
             </div>
             <div class="kpi-row" aria-label="Indicadores de sensores">
               <div>
-                <span>Sensores ativos</span>
+                <span data-i18n="preview.activeSensors">Sensores ativos</span>
                 <strong>128</strong>
               </div>
               <div>
-                <span>Leituras hoje</span>
+                <span data-i18n="preview.readingsToday">Leituras hoje</span>
                 <strong>42k</strong>
               </div>
               <div>
-                <span>Alarmes abertos</span>
+                <span data-i18n="preview.openAlarms">Alarmes abertos</span>
                 <strong>3</strong>
               </div>
             </div>
             <div class="chart-panel">
               <div class="panel-heading">
-                <span>Temperatura e umidade</span>
-                <small>ultimas 24h</small>
+                <span data-i18n="preview.chartTitle">Temperatura e umidade</span>
+                <small data-i18n="preview.last24h">ultimas 24h</small>
               </div>
               <svg class="chart" viewBox="0 0 520 220" role="img" aria-label="Grafico de telemetria em tempo real">
                 <path class="grid-line" d="M20 40H500M20 90H500M20 140H500M20 190H500" />
@@ -96,8 +102,8 @@
             </div>
             <div class="sensor-panel">
               <div class="panel-heading">
-                <span>Lista de sensores</span>
-                <small>status ao vivo</small>
+                <span data-i18n="preview.sensorList">Lista de sensores</span>
+                <small data-i18n="preview.liveStatus">status ao vivo</small>
               </div>
               <ul>
                 <li>
@@ -108,12 +114,12 @@
                 <li>
                   <span class="status online"></span>
                   <strong>Solo-Cana-Norte</strong>
-                  <em>61% umid.</em>
+                  <em data-i18n="preview.humidityValue">61% umid.</em>
                 </li>
                 <li>
                   <span class="status alert"></span>
                   <strong>Camara-Fria-02</strong>
-                  <em>Alarme HIGH</em>
+                  <em data-i18n="preview.highAlarm">Alarme HIGH</em>
                 </li>
               </ul>
             </div>
@@ -123,28 +129,28 @@
 
       <section id="plataforma" class="section intro">
         <div class="section-heading">
-          <p class="eyebrow">Da ponta ao painel</p>
-          <h2>Uma camada completa para operacoes conectadas</h2>
+          <p class="eyebrow" data-i18n="platform.eyebrow">Da ponta ao painel</p>
+          <h2 data-i18n="platform.title">Uma camada completa para operacoes conectadas</h2>
         </div>
         <div class="intro-grid">
           <article>
-            <h3>Coleta segura</h3>
-            <p>
+            <h3 data-i18n="platform.collectTitle">Coleta segura</h3>
+            <p data-i18n="platform.collectText">
               Sensores, gateways e controladores publicam dados em topicos MQTT
               padronizados, com credenciais por dispositivo e controle de ACL no
               broker.
             </p>
           </article>
           <article>
-            <h3>Dados acionaveis</h3>
-            <p>
+            <h3 data-i18n="platform.dataTitle">Dados acionaveis</h3>
+            <p data-i18n="platform.dataText">
               A ingestao organiza telemetria, status, variaveis e indicadores
               para consulta historica, graficos, KPIs e relatorios.
             </p>
           </article>
           <article>
-            <h3>Resposta operacional</h3>
-            <p>
+            <h3 data-i18n="platform.responseTitle">Resposta operacional</h3>
+            <p data-i18n="platform.responseText">
               A central de alarmes prioriza incidentes, apoia notificacoes,
               webhooks e rotinas de acompanhamento para equipes de campo.
             </p>
@@ -154,110 +160,110 @@
 
       <section id="recursos" class="section feature-band">
         <div class="section-heading">
-          <p class="eyebrow">Recursos principais</p>
-          <h2>O que o Portal Inovat entrega</h2>
+          <p class="eyebrow" data-i18n="features.eyebrow">Recursos principais</p>
+          <h2 data-i18n="features.title">O que o Portal Inovat entrega</h2>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
             <span class="feature-icon">MQ</span>
-            <h3>MQTT com isolamento por cliente</h3>
-            <p>Topicos por tenant, publicacao de telemetria, status online/offline e comandos para dispositivos.</p>
+            <h3 data-i18n="features.mqttTitle">MQTT com isolamento por cliente</h3>
+            <p data-i18n="features.mqttText">Topicos por tenant, publicacao de telemetria, status online/offline e comandos para dispositivos.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon">KP</span>
-            <h3>Dashboards e KPIs</h3>
-            <p>Paineis para leitura rapida da operacao, graficos em tempo real e historico por sensor ou aplicacao.</p>
+            <h3 data-i18n="features.dashboardTitle">Dashboards e KPIs</h3>
+            <p data-i18n="features.dashboardText">Paineis para leitura rapida da operacao, graficos em tempo real e historico por sensor ou aplicacao.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon">AL</span>
-            <h3>Central de alarmes</h3>
-            <p>Incidentes por severidade, status de atendimento, regras, notificacoes e integracao por webhook.</p>
+            <h3 data-i18n="features.alarmsTitle">Central de alarmes</h3>
+            <p data-i18n="features.alarmsText">Incidentes por severidade, status de atendimento, regras, notificacoes e integracao por webhook.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon">IO</span>
-            <h3>Controladores I/O</h3>
-            <p>Provisionamento de controladores, canais digitais e analogicos, Modbus e comandos remotos com rastreio.</p>
+            <h3 data-i18n="features.controllersTitle">Controladores I/O</h3>
+            <p data-i18n="features.controllersText">Provisionamento de controladores, canais digitais e analogicos, Modbus e comandos remotos com rastreio.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon">AP</span>
-            <h3>Aplicacoes de sensores</h3>
-            <p>Templates para casos de uso como solo, ambiente refrigerado, processos industriais e monitoramento customizado.</p>
+            <h3 data-i18n="features.appsTitle">Aplicacoes de sensores</h3>
+            <p data-i18n="features.appsText">Templates para casos de uso como solo, ambiente refrigerado, processos industriais e monitoramento customizado.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon">RP</span>
-            <h3>Relatorios e auditoria</h3>
-            <p>Exportacoes historicas, rastreabilidade de acoes, trilhas de auditoria e suporte a rotinas de conformidade.</p>
+            <h3 data-i18n="features.reportsTitle">Relatorios e auditoria</h3>
+            <p data-i18n="features.reportsText">Exportacoes historicas, rastreabilidade de acoes, trilhas de auditoria e suporte a rotinas de conformidade.</p>
           </article>
         </div>
       </section>
 
       <section class="section flow" aria-labelledby="flow-title">
         <div class="section-heading">
-          <p class="eyebrow">Arquitetura</p>
-          <h2 id="flow-title">Projetado para telemetria continua</h2>
+          <p class="eyebrow" data-i18n="flow.eyebrow">Arquitetura</p>
+          <h2 id="flow-title" data-i18n="flow.title">Projetado para telemetria continua</h2>
         </div>
         <div class="flow-grid">
           <div class="flow-step">
             <strong>1</strong>
-            <h3>Dispositivos</h3>
-            <p>Sensores e controladores enviam leituras e recebem comandos.</p>
+            <h3 data-i18n="flow.devicesTitle">Dispositivos</h3>
+            <p data-i18n="flow.devicesText">Sensores e controladores enviam leituras e recebem comandos.</p>
           </div>
           <div class="flow-step">
             <strong>2</strong>
-            <h3>Broker MQTT</h3>
-            <p>Autenticacao e ACLs isolam cada cliente no seu namespace.</p>
+            <h3 data-i18n="flow.brokerTitle">Broker MQTT</h3>
+            <p data-i18n="flow.brokerText">Autenticacao e ACLs isolam cada cliente no seu namespace.</p>
           </div>
           <div class="flow-step">
             <strong>3</strong>
-            <h3>Ingestao</h3>
-            <p>Workers gravam series temporais e verificam eventos operacionais.</p>
+            <h3 data-i18n="flow.ingestionTitle">Ingestao</h3>
+            <p data-i18n="flow.ingestionText">Workers gravam series temporais e verificam eventos operacionais.</p>
           </div>
           <div class="flow-step">
             <strong>4</strong>
             <h3>Portal</h3>
-            <p>Dashboards, alarmes, relatorios e administracao em uma interface.</p>
+            <p data-i18n="flow.portalText">Dashboards, alarmes, relatorios e administracao em uma interface.</p>
           </div>
         </div>
       </section>
 
       <section id="seguranca" class="section security">
         <div class="security-copy">
-          <p class="eyebrow">Seguranca e governanca</p>
-          <h2>Isolamento, auditoria e operacao confiavel desde a base</h2>
-          <p>
+          <p class="eyebrow" data-i18n="security.eyebrow">Seguranca e governanca</p>
+          <h2 data-i18n="security.title">Isolamento, auditoria e operacao confiavel desde a base</h2>
+          <p data-i18n="security.text">
             O Portal Inovat combina autenticacao moderna, segregacao de topicos,
             ACLs MQTT, logs de auditoria e protecoes de infraestrutura para
             manter dados e dispositivos organizados por cliente.
           </p>
         </div>
         <ul class="security-list">
-          <li>Autenticacao JWT com refresh token rotativo</li>
-          <li>Namespaces MQTT por tenant e ACLs no broker</li>
-          <li>Logs de auditoria para acoes sensiveis</li>
-          <li>Relatorios, LGPD operacional e trilhas de conformidade</li>
+          <li data-i18n="security.itemAuth">Autenticacao JWT com refresh token rotativo</li>
+          <li data-i18n="security.itemMqtt">Namespaces MQTT por tenant e ACLs no broker</li>
+          <li data-i18n="security.itemAudit">Logs de auditoria para acoes sensiveis</li>
+          <li data-i18n="security.itemCompliance">Relatorios, LGPD operacional e trilhas de conformidade</li>
         </ul>
       </section>
 
       <section id="contato" class="section contact">
         <img src="assets/inovat-logo.svg" alt="Inovat" />
         <div>
-          <p class="eyebrow">Proximo passo</p>
-          <h2>Conheca o Portal Inovat em operacao</h2>
-          <p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Proximo passo</p>
+          <h2 data-i18n="contact.title">Conheca o Portal Inovat em operacao</h2>
+          <p data-i18n="contact.text">
             Apresente sua necessidade de monitoramento e veja como sensores,
             controladores, dashboards e alarmes podem ser organizados em um fluxo
             unico de telemetria.
           </p>
         </div>
         <a class="button primary" href="mailto:contato@inovat.com.br?subject=Apresentacao%20Portal%20Inovat">
-          Entrar em contato
+          <span data-i18n="contact.cta">Entrar em contato</span>
         </a>
       </section>
     </main>
 
     <footer class="site-footer">
       <span>Portal Inovat</span>
-      <span>Telemetria IoT, alarmes e operacao conectada.</span>
+      <span data-i18n="footer.tagline">Telemetria IoT, alarmes e operacao conectada.</span>
     </footer>
   </body>
 </html>

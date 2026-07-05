@@ -109,6 +109,45 @@ nav a:focus-visible {
   outline: none;
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(5, 16, 26, 0.6);
+}
+
+.language-switcher button {
+  min-width: 52px;
+  min-height: 34px;
+  border: 0;
+  border-radius: 999px;
+  color: #d8e7f6;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.language-switcher button[aria-pressed="true"] {
+  color: #081521;
+  background: var(--amber);
+}
+
+.language-switcher button:hover,
+.language-switcher button:focus-visible {
+  outline: none;
+  background: rgba(55, 183, 217, 0.18);
+}
+
+.language-switcher button[aria-pressed="true"]:hover,
+.language-switcher button[aria-pressed="true"]:focus-visible {
+  background: #ffd36d;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.03fr) minmax(320px, 0.72fr);
@@ -569,6 +608,16 @@ h3 {
     width: 100%;
     overflow-x: auto;
     border-radius: 8px;
+  }
+
+  .language-switcher {
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 8px;
+  }
+
+  .language-switcher button {
+    flex: 1;
   }
 
   nav a {
